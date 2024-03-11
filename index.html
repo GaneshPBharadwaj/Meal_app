@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Linking to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Setting the viewport to control layout on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Setting the title of the document -->
+    <title>Meal App</title>
+
+    <!-- Linking with CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Including the Font Awesome script -->
+    <script src="https://kit.fontawesome.com/e6f12e5790.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Background image container -->
+    <div class="background-image">
+      <img src="./assets/BG-img.png" alt="" />
+    </div>
+
+    <!-- Navigation link to the Home page -->
+    <div id="navbar">
+      <a href="index.html">
+        <div class="home">Home</div>
+      </a>
+
+      <!-- Sidebar toggle button -->
+      <div class="side-drawer">
+        <div id="toggle-sidebar">
+          <i class="fa-solid fa-bars"></i>
+          <span id="total-counter"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Items will be displayed here -->
+    <div id="main">
+      <div id="sidebar">
+        <div class="top_gap"></div>
+        <hr />
+        <div class="title small">Favourite Items</div>
+        <hr />
+        <div id="fav">
+        </div>
+      </div>
+
+      <div id="flex-box">
+        <div class="container">
+          <div class="header">
+            <div class="title">Search for Savory Meals</div>
+          </div>
+          <div class="" id="search-bar">
+            <div class="icon">
+              <i class="fa-solid fa-search"></i>
+            </div>
+            <div class="new-search-input">
+              <form onkeyup="showMealList()">
+                <input id="search-input" type="text" placeholder="Find your delight"/>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards will be displayed here -->
+        <div id="cards-holder" class="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Linking with JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
